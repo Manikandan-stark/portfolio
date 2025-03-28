@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/server8.jpeg);
+    background-image: url(/images/server8.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -106,7 +106,7 @@ nav li:first-child {
 }
 
 .p-image{
-    background-image: url(/project.jpeg);
+    background-image: url(/images/project.jpeg);
     background-size: cover;
     width: 90vw;
     height: 70vh;
