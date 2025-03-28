@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <--------- About page header--------->
+    <nav>
+        <ul class="sidebar"> 
+            <li onclick=" hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                <path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"></path>
+                </svg></a></li>
+                <li><a href="/html/portfolio.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>      
+                <li><a href="/html/About me.html"><i class="fa-solid fa-address-book"></i>About me</a> </li>
+                <li><a href="/html/skill.html">   <i class="fa-solid fa-brain"></i>Skills</a></li>
+                <li><a href="/html/Project.html"><i class="fa-solid fa-list-check"></i>Project</a></li>
+                <li><a href="/html/Contact me.html"><i class="fa-solid fa-phone-square"></i>Contact me</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">MyPortfolio</a></li>
+            <li class="hideOnMobile" ><a href="/html/portfolio.html">Home</a></li>      
+            <li class="hideOnMobile" ><a href="/html/About me.html">About me</a> </li>
+            <li class="hideOnMobile" ><a href="/html/skill.html">Skills</a></li>
+            <li class="hideOnMobile" ><a href="/html/Project.html">Project</a></li>
+            <li class="hideOnMobile" ><a href="/html/Contact me.html">Contact me</a></li>   
+            <li class="menu-button" onclick="Sidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                </svg></a></li>       
+        </ul>
+    </nav>
+     <!-- <--------- About page main--------->
+     <div class="Education">
+        <button class="xbutton" onclick="closeEducation()"><i class="fa-solid fa-xmark"></i></button> 
+        <h1>About My Education</h1>
+        <h2>1. BCA</h2> 
+        <h3>Annai vailankanni arts & science clg 2017 - 2020 </h3>
+        <h2>2. HSC</h2> 
+        <h3>Kalyana sundaram Hr. Sec. School, Thanjavur 2016 - 2017  with 74% </h3>
+        <h2>3. SSLC</h2> 
+        <h3>Raja’s  Hr. Sec. School, Thanjavur 2015 - 2016 with 62%</h3>
+    </div>  
+    <div class="content-container">
+            <div class="image"><img src="/mk2.JPG" alt=""></div>
+            <div class="Summery">
+                <h1>Summery</h1>
+                <p>Enthusiastic and detail-oriented fresher with a strong foundation in software development, programming, and problem-solving. Proficient in [list key programming languages, e.g., Python, Javascript ], 
+                with hands-on experience in [vs code tool, Django & ReactJS frameworks, Python language, MySQL workbench,] Adept at learning new technologies quickly and applying them to real-world projects. 
+                Strong team player with excellent communication skills and a passion for building efficient, scalable, and user-friendly software solutions. Eager to contribute to innovative
+                projects and grow as a software developer in a dynamic environment.</p>
+            </div>
+            <div class="About">
+                <h1>If you want to know my Education Click below button</h1>
+                <button class="buttone" onclick="openEducation()">Education</button>
+            </div>
+    </div>
+           
+</body>
+<script src="/html/js/portfolio.js"></script>
+</html>

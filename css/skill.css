@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/server4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(5px);
+    position: sticky;
+}
+
+nav {
+    background: linear-gradient(50deg, #90979b, #90cfec, #103ec7, #476cd1);
+    height: 50px;
+    border-style: solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: rgb(243, 238, 238);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(50deg, #aeb8be, #446372, #476cd1, #162140);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Updated Sidebar to match home page */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a i {
+    font-size: 20px;
+    color: white;
+    transition: none;
+}
+
+.sidebar a:hover i {
+    transform: none;
+    font-size: 20px;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Updated container and boxes with sharp square borders */
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    /* margin-top: 100px; */
+    margin-left: 50px;
+    width: 90%;
+    padding-top: 50px;
+}
+
+.frontend, .backend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 200px;
+    background: rgba(27, 90, 143, 0.658);
+    gap: 60px;
+    font-size: xx-large;
+    position: relative;
+    margin-top: 50px;
+    padding: 40px;
+    transform: skewx(20deg);
+}
+
+
+
+/* Gradient border effect on hover */
+.frontend::before, .backend::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(71, 108, 209, 0.8), 
+        rgba(144, 207, 236, 0.8), 
+        rgba(71, 108, 209, 0.8));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    
+}
+
+
+/* Skill icons styling */
+.backend>i {
+    font-size: 60px;
+    color: #d6d8dc;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(8, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.backend>i:hover {
+    font-size: 80px;
+    transform: translateY(-8px);
+    background: rgb(14, 0, 0);
+    box-shadow: 0 8px 16px rgba(71, 108, 209, 0.3);
+
+}
+
+.frontend>i {
+    font-size: 60px;
+    color: #d6d8dc;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(8, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frontend>i:hover {
+    font-size: 80px;
+    transform: translateY(-8px);
+    background: rgb(14, 0, 0);
+    box-shadow: 0 8px 16px rgba(71, 108, 209, 0.3);
+
+}
+
+
+
+.django svg {
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.django svg:hover {
+    width: 80px;
+    height: 80px;
+    transform: translateY(-8px);
+    background: rgb(246, 244, 244);
+    box-shadow: 0 8px 16px rgba(71, 108, 209, 0.3);
+}
+
+/* Section titles */
+.frontend h1, .backend h1 {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: rgba(239, 236, 236, 0.95);
+    padding: 8px 25px;
+    color: #333;
+    font-size: 1.5rem;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(71, 108, 209, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container-box {
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 0%;
+    }
+    
+    .frontend, .backend {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .frontend, .backend {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px;
+        min-height: auto;
+    }
+    
+    i {
+        font-size: 60px;
+    }
+    
+    i:hover {
+        font-size: 70px;
+    }
+    
+    .django svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .django svg:hover {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+    
+    .container-box {
+        margin-top: 30px;
+    }
+    nav{
+        position: sticky;
+    }
+    
+    .frontend, .backend {
+        gap: 30px;
+        padding: 25px;
+    }
+    
+    i {
+        font-size: 50px;
+    }
+    
+    i:hover {
+        font-size: 60px;
+    }
+    
+    .django svg {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .django svg:hover {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .frontend h1, .backend h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .frontend, .backend {
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    i {
+        font-size: 40px;
+    }
+    
+    i:hover {
+        font-size: 50px;
+    }
+    
+    .django svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .django svg:hover {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .frontend h1, .backend h1 {
+        font-size: 1.1rem;
+        top: -15px;
+    }
+    
+    .sidebar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+    
+    .frontend, .backend {
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    i {
+        font-size: 35px;
+    }
+    
+    i:hover {
+        font-size: 45px;
+    }
+    
+    .django svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .django svg:hover {
+        width: 45px;
+        height: 45px;
+    }
+}

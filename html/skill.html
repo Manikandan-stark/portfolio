@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/skill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <--------- skills header--------->
+    <nav>
+        <ul class="sidebar"> 
+            <li onclick=" hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                <path d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"></path>
+                </svg></a></li>
+                <li><a href="/html/portfolio.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>      
+                <li><a href="/html/About me.html"><i class="fa-solid fa-address-book"></i>About me</a> </li>
+                <li><a href="/html/skill.html">   <i class="fa-solid fa-brain"></i>Skills</a></li>
+                <li><a href="/html/Project.html"><i class="fa-solid fa-list-check"></i>Project</a></li>
+                <li><a href="/html/Contact me.html"><i class="fa-solid fa-phone-square"></i>Contact me</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">MyPortfolio</a></li>
+            <li class="hideOnMobile" ><a href="/html/portfolio.html">Home</a></li>      
+            <li class="hideOnMobile" ><a href="/html/About me.html">About me</a> </li>
+            <li class="hideOnMobile" ><a href="/html/skill.html">Skills</a></li>
+            <li class="hideOnMobile" ><a href="/html/Project.html">Project</a></li>
+            <li class="hideOnMobile" ><a href="/html/Contact me.html">Contact me</a></li>        
+            <li class="menu-button" onclick="Sidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                </svg></a></li>       
+        </ul>
+    </nav>
+     <!-- <---------skills main--------->
+    <div class="container-box">
+      <div class="frontend">
+        <h1>Frontend technologies</h1>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        <i class="fa-brands fa-js"></i>
+      </div>
+        <div class="backend">
+        <h1>Backend technologies</h1>
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-solid fa-database"></i>
+        <i class="fa-solid fa-server"></i>
+        <i class="django"><svg xmlns="http://www.w3.org/2000/svg" height="80px" width="80px" enable-background="new 0 0 24 24" viewBox="0 0 20 24" id="django">
+            <path d="M16.482,24.008c-0.112,0-0.226-0.025-0.329-0.076l-3.325-1.625c-0.258-0.126-0.422-0.388-0.421-0.675s0.165-0.549,0.424-0.674c1.422-0.688,2.072-1.239,2.486-2.11c0.462-0.948,0.602-2.15,0.602-5.152V6.427c0-0.414,0.336-0.75,0.75-0.75h3.581c0.414,0,0.75,0.337,0.75,0.751v8.535c0,3.086-0.232,4.579-0.92,5.914c-0.658,1.327-1.572,2.185-3.255,3.048C16.718,23.98,16.6,24.008,16.482,24.008z M14.777,21.589l1.691,0.827c1.183-0.65,1.796-1.256,2.272-2.217c0.568-1.104,0.759-2.422,0.759-5.237V7.178l-2.081-0.001v6.518c0,3.306-0.168,4.608-0.749,5.803C16.268,20.343,15.697,20.987,14.777,21.589z"></path>
+            <path d="M9.518 19.021C4.67 19.021 2 16.652 2 12.352c0-4.146 2.821-6.931 7.021-6.931.305 0 .576.013.836.041V.758c0-.414.336-.75.75-.75h3.644c.414 0 .75.336.75.75V17.77c0 .36-.256.669-.609.737C12.48 18.872 11.068 19.021 9.518 19.021zM14.25 17.77h.01H14.25zM9.021 6.921c-3.405 0-5.521 2.081-5.521 5.431 0 3.478 1.969 5.168 6.018 5.168 1.282 0 2.472-.11 3.982-.376V1.508h-2.144v4.854c0 .232-.107.452-.292.594s-.425.189-.648.132C9.954 6.966 9.576 6.921 9.021 6.921zM9.353 16.06c-2.277 0-3.637-1.413-3.637-3.78 0-2.404 1.399-3.897 3.653-3.9.001 0 .002 0 .003 0C9.37 8.376 9.442 8.378 9.449 8.378c.483 0 .97.081 1.406.234.3.105.501.389.501.708v5.895c0 .375-.276.692-.647.743C10.168 16.032 9.801 16.06 9.353 16.06zM9.376 9.879c-1.434 0-2.16.808-2.16 2.4 0 1.556.679 2.28 2.137 2.28.177 0 .336-.005.504-.017V9.907C9.714 9.887 9.568 9.886 9.423 9.878 9.407 9.879 9.392 9.879 9.376 9.879zM20.25 5.289h-3.581c-.414 0-.75-.336-.75-.75V.762c0-.414.336-.75.75-.75h3.581c.414 0 .75.336.75.75v3.777C21 4.953 20.664 5.289 20.25 5.289zM17.419 3.789H19.5V1.512h-2.081V3.789z"></path>
+            </svg></i>
+        </div>
+    </div>
+</body>
+<script src="/html/js/portfolio.js"></script>
+</html>

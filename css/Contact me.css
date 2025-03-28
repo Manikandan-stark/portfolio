@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/comp1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    background: linear-gradient(50deg, #90979b, #90cfec, #495886, #476cd1);
+    height: 50px;
+    border-style: solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: rgb(243, 238, 238);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(50deg, #aeb8be, #446372, #476cd1, #4666be);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: white;
+    padding: 15px 30px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.containerBox {
+    width: 90vw;
+    height: 100vh;
+    /* background-color: rgba(11, 1, 1, 0); */
+    /* margin-top: 70px; */
+    margin-left: 150px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+}
+
+.ProfileBox {
+    margin-top: 70px;
+    background-color: rgba(231, 214, 214, 0.5);
+    border-radius: 40px;
+    height: 70%;
+    width: 60%;
+    margin-left: 10px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-around;
+    padding: 30px;
+    color: #333;
+    backdrop-filter: blur(5px);
+}
+
+span {
+    color: blue;
+}
+
+.ProfileBox h1 {
+    margin-left: 190px;
+    font-size: 2rem;
+    color: #476cd1;
+    margin-bottom:auto  ;
+}
+
+.ProfileBox h2 {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom:auto;
+}
+
+.ProfileBox i {
+    margin-right: 10px;
+    color: #476cd1;
+}
+
+.MessageBox {
+    margin-top: 70px;
+    background-color: rgba(255, 200, 0, 0.587);
+    border-radius: 40px;
+    height: 70%;
+    width: 60%;
+    margin-right: 150px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.MessageBox i {
+    margin-right: 10px;
+    color: #476cd1;
+}
+
+.MessageBox>h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 30vw;
+    height: 60vh;
+    margin-top: 10px;
+}
+
+.formBox>.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formBox>button {
+    width: 55%;
+    padding: 10px;
+    background-color: rgb(21, 6, 232);
+    color: rgb(7, 6, 6);
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formBox>button:hover {
+    background-color: rgb(196, 199, 208);
+    transform: translateY(-3px);
+}
+
+.formBox>.form-group>input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.formBox>.form-group>input:focus {
+    border-color: #476cd1;
+    box-shadow: 0 0 5px rgba(71, 108, 209, 0.5);
+}
+
+.formBox>.form-group>lable {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formBox>.form-group span {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+    display: none;
+}
+
+.footerSection {
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.socialMedia, .front, .back, .ContactMe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialMedia>ul, .front>ul, .back>ul, .ContactMe>ul {
+    list-style: none;
+    text-align: center;
+}
+
+.socialMedia>ul>li>a, .front>ul>li>h5, .back>ul>li>h5, .ContactMe>ul>li {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.socialMedia>ul>li>a:hover {
+    color: rgb(7, 234, 56);
+}
+
+.front>ul>li:hover, .back>ul>li:hover {
+    color: rgb(7, 234, 56);
+    cursor: pointer;
+}
+
+h4 {
+    text-decoration: underline blue;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+h4:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.socialMedia>ul>li>a>i, .ContactMe>ul>li>i {
+    margin: 10px;
+    color: #476cd1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .containerBox {
+        margin-left: 5%;
+        width: 95%;
+    }
+    
+    .ProfileBox, .MessageBox {
+        width: 50%;
+    }
+    
+    .ProfileBox h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .ProfileBox h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .formBox {
+        width: 80%;
+    }
+    nav{
+        position: sticky;
+    }
+}
+
+@media (max-width: 992px) {
+    .containerBox {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .ProfileBox, .MessageBox {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .footerSection {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .socialMedia, .front, .back, .ContactMe {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+    
+    .containerBox {
+        margin-top: 60px;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+    
+    .ProfileBox, .MessageBox {
+        width: 90%;
+    }
+    
+    .formBox>.form-group>input {
+        font-size: 18px;
+    }
+    
+    .formBox>.form-group>lable {
+        font-size: 18px;
+    }
+    
+    .formBox>button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ProfileBox h1, .MessageBox>h1 {
+        font-size: 1.5rem;
+    }
+    
+    .ProfileBox h2 {
+        font-size: 1rem;
+    }
+    
+    .formBox>.form-group>input {
+        font-size: 16px;
+        height: 35px;
+    }
+    
+    .formBox>.form-group>lable {
+        font-size: 16px;
+    }
+    
+    .formBox>button {
+        font-size: 16px;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+    }
+    
+    .sidebar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+    
+    .containerBox {
+        padding: 15px;
+    }
+    
+    .ProfileBox, .MessageBox {
+        padding: 20px;
+    }
+    
+    .ProfileBox h1, .MessageBox>h1 {
+        font-size: 1.3rem;
+    }
+}
